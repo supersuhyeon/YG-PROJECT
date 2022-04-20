@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'KoPubDotumMedium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* COMMON */
+
+body{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: black;
+    font-family: 'KoPubDotumMedium', sans-serif;
+    font-family: 'Armstrong', sans-serif;                
+    font-family: 'YGEdged-Bold', sans-serif;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.inner{
+    width: 1100px;
+    /* margin으로 .inner 중앙정렬 상하 0 좌우 auto */
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* HEADER */
+header{
+}
+header>.inner{
+
+height: 130px;
+}
+
+/* HEADER - logo */
+
+header .logo {
+/* 로고 수직가운데 정렬하기 position absolute, topbottom 0, margin auto 0, height값 */
+position: absolute;
+top: 0;
+bottom: 0;
+margin: auto 0; 
+height: 35px;
+}
+
+/* HEADER - sub-menu */
+
+header .sub-menu{
+    position: absolute;
+    top: 10px;
+    right: 0
+
+}
+
+header .sub-menu ul.menu{
+    display: flex;
+
+}
+
+header .sub-menu ul.menu li{
+    position: relative;
+
+}
+
+header .sub-menu ul.menu li::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: white;
+    position: absolute;
+    top: 12px;
+
+}
+
+header .sub-menu ul.menu li:first-child::before{
+display: none;
+}
+
+header .sub-menu ul.menu li a{
+font-family: 'Armstrong', sans-serif;
+font-size: 12px;
+padding: 10px 16px;
+display: block;
+color: white;
+
+}
+
+header .sub-menu ul.menu li a:hover{
+color: plum;
+}
+
+/* HEADER - main-menu */
+
+.main-menu{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main-menu>li>a{
+
+    line-height: 3rem;
+}
+
+.main-menu>li>a, .subWrap a {
+    font-family: 'Armstrong', sans-serif;
+    display: block;
+    padding: 5px 23px;
+    width: 150px;
+    text-align: center;
+    color: white;
+
+
+}
+
+.main-menu>li>a:hover, .subWrap a:hover{
+    color: plum;
+
+}
+
+.subWrap{
+position: absolute;
+height: 140px;
+width: 100%;
+display: none;
+z-index: 99;
+background-color: black;
+}
+
+.subWrap>ul{
+display: flex;
+justify-content: center;
+margin-left: 316px;
+}
+
+/* main */
+main .bx-wrapper{
+    border: 0;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-pager{
+    display: none;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item {
+    display: none;
+}
+
+
+/* section 공지사항 */
+.notice{
+
+
+}
+
+.notice .notice-line{
+/* 현재부모가 높이가 없어서 자식요소가 늘어나는만큼 높이를 가진다
+.inner height 200px이니 notice-line이 자동으로 값이 200px이되면서
+하위요소 height 100%로 다 200px으로 변경 */
+position: relative;
+top: -60px;
+}
+
+.notice .notice-line .bg-left{
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white
+
+}
+.notice .notice-line .bg-right{
+
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background : linear-gradient(45deg, hotpink, plum) 
+
+}
+
+.notice .notice-line .inner{
+    /* inner부분의 높이만 정리해주면 다른곳은 자동적으로 정리 */
+
+    height: 62px;
+    display: flex;
+}
+
+.notice .notice-line .inner__left{
+
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+.notice .notice-line .inner__left h2{
+font-size: 17px;
+margin-right: 20px;
+}
+
+.notice .notice-line .inner__left .swiper-container{
+flex-grow: 1; 
+height: 62px;
+overflow: hidden;
+/* items의 기본값은 strech라서 높이값이없으면 최대로 늘어남 */
+
+}
+
+.notice .notice-line .inner__left .swiper-slide{
+
+    height: 62px;
+    display: flex;
+    align-items: center;
+
+}
+
+.notice .notice-line .inner__left .swiper-slide a{
+color: black;
+}
+
+.notice .notice-line .inner__left .notice-line__more{
+width: 62px;
+height: 62px;
+/* 컨테이너에있는 아이템들 중앙정렬하는법 */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.notice .notice-line .inner__left .notice-line__more .material-icons{
+color: black;
+font-size: 30px;
+}
+
+.notice .notice-line .inner__right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    padding: 3px;
+}
+
+.notice .notice-line .inner__right h2{
+    font-family: 'Armstrong', sans-serif;
+    color: black;
+    margin-right: 20px;
+}
+
+
+.notice .notice-line .inner__right p{
+    font-family: 'Armstrong', sans-serif;
+    color: black;
+
+}
+
+.notice .notice-line .inner__right p::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.notice .notice-line .inner__right p a{
+display: block;
+padding: 20px;
+color: black;
+cursor: pointer;
+}
+
+
+/* section grid */
+
+.wrapper{
+ 
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 360px 360px 360px;
+    column-gap: 20px;
+	row-gap: 20px;
+
+}
+
+.wrapper .career{
+
+    grid-row: 1/3;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.wrapper .career .bg{
+background: url(/YGHOME/career.jpg), no-repeat;
+width: 360px;
+height: 740px;
+transition: 0.8s;
+}
+
+.wrapper .career:hover .bg{
+transform: scale(1.1);
+
+}
+
+.wrapper .career .text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+.wrapper .career .text h2 a{
+font-family: 'Armstrong',sans-serif;
+color: white;
+font-size: 30px;
+}
+
+.wrapper .career .text p{
+
+}
+
+.wrapper .yglife {
+background-color: yellow;
+    grid-column: 2/4;
+}
+
+.wrapper .producer {
+    background-color: blue;
+}
+
+.wrapper .audition{
+    background-color: pink;
+}
+
+.wrapper .ygselect{
+    grid-column: 1/4;
+    background-color: purple;
+}
