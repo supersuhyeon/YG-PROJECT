@@ -318,7 +318,7 @@ cursor: pointer;
 background: url(/YGHOME/career.jpg), no-repeat;
 width: 360px;
 height: 740px;
-transition: 0.8s;
+transition: 0.5s;
 }
 
 .wrapper .career:hover .bg{
@@ -333,20 +333,56 @@ transform: scale(1.1);
 
 }
 
+
 .wrapper .career .text h2 a{
 font-family: 'Armstrong',sans-serif;
 color: white;
-font-size: 30px;
+font-size: 20px;
+display: block;
 }
 
+
 .wrapper .career .text p{
+
+    margin-top: 10px;
 
 }
 
 .wrapper .yglife {
-background-color: yellow;
     grid-column: 2/4;
+    overflow: hidden;
 }
+
+.wrapper .yglife .lbg{
+    background: url(/YGHOME/yglife.jpg), no-repeat;
+    width: 740px;
+    height: 360px;
+    transition: 0.8s;
+    }
+
+.wrapper .yglife:hover .lbg{
+        transform: scale(1.1);
+
+        }
+
+.wrapper .yglife .ltext{
+    position: absolute;
+    top: 20px;
+    left: 400px;
+
+}
+
+.wrapper .yglife .ltext h2 a{
+    font-family: 'Armstrong',sans-serif;
+    color: white;
+    font-size: 20px;
+    }
+
+    .wrapper .yglife .ltext p{
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+    
 
 .wrapper .producer {
     background-color: blue;
