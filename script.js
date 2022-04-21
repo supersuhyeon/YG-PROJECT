@@ -39,4 +39,26 @@ $(document).ready(function(){
       loop: true
     });
 
+    new Swiper('.musicslider .swiper-container', {
+
+      slidesPerView : 3,
+      spaceBetween : 100, //슬라이드 사이 여백
+      centeredSlides : true,
+      loop:true,
+      autoplay: {
+        delay:5000
+      },
+      pagination: {
+        el: '.musicslider .swiper-pagination', //페이지 번호 요소 선택자
+        clickable: true
+      },
+      navigation: {
+        prevEl: '.musicslider .swiper-prev', //이전슬라이드보는버튼
+        nextEl: '.musicslider .swiper-next' //다음슬라이드보는버튼
+      }
+
+
+    });
+
+
     AOS.init();

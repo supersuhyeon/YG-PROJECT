@@ -35,8 +35,8 @@ a{
 
 
 /* HEADER */
-header{
-}
+header{}
+
 header>.inner{
 
 height: 130px;
@@ -161,10 +161,7 @@ main .bx-wrapper{
 
 
 /* section 공지사항 */
-.notice{
-
-
-}
+.notice{}
 
 .notice .notice-line{
 /* 현재부모가 높이가 없어서 자식요소가 늘어나는만큼 높이를 가진다
@@ -417,18 +414,106 @@ transition: 0.8s;
 
 
 /* section visual */
-.visual{
+.visual {
 
     background-image: url("/YGHOME/starsbg.jpg");
-
 }
 
 .visual .arrowbeat img{
-margin-left: 220px;
+margin-left: 20px;
 margin-top: 100px;
 }
 
 .visual .mvtext img{
-margin-left: 225px;
+margin-left: 20px;
 margin-top: 50px;
+
+}
+
+/* section music */
+
+.music{
+    margin-top: 30px;
+}
+
+.music .musicslider{
+    height: 580px;
+    position: relative;
+}
+
+.music .musicslider .swiper-container{
+
+    width: calc(800px * 3 + 40px);
+    height: 530px;
+    text-align: center;
+    font-size: 12px;
+    /* 화면 정가운데 배치하기
+    position, musicslider 을 기준으로 왼쪽에서 50%에 컨테이너 배치
+    marginleft의 -값을 컨테이너를 당겨온것
+    */
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: calc((800px * 3 + 40px)/-2);
+}
+
+.music .musicslider .swiper-slide {
+    opacity: .2;
+    transition: opacity .2s;
+}
+
+.music .musicslider .swiper-slide-active {
+opacity: 1;
+}
+
+.music .musicslider .swiper-pagination{
+
+}
+
+.music .musicslider .swiper-pagination .swiper-pagination-bullet{
+background-color: transparent;
+background-image: url("/YGHOME/music_slide_pager.png");
+width: 8px;
+height: 8px;
+margin-right: 6px;
+outline: none;
+}
+
+.music .musicslider .swiper-pagination .swiper-pagination-bullet:last-child{
+margin-right: 0px;
+}
+
+.music .musicslider .swiper-pagination .swiper-pagination-bullet-active{
+    background-image: url("/YGHOME/music_slide_pageron.jpg");
+}
+
+.music .musicslider .swiper-prev,
+.music .musicslider .swiper-next{
+    width: 42px;
+    height: 42px;
+border: 2px solid white;
+border-radius: 50%;
+position: absolute;
+top: 300px;
+z-index: 1;
+cursor: pointer;
+outline: none;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: .4s;
+
+}
+
+.music .musicslider .swiper-prev{
+    left: 150px;
+}
+.music .musicslider .swiper-next{
+    right: 150px
+}
+
+.music .musicslider .swiper-prev:hover,
+.music .musicslider .swiper-next:hover{
+background-color: plum;
+color: white;
 }
