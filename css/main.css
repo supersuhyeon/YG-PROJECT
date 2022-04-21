@@ -303,54 +303,52 @@ cursor: pointer;
     grid-template-rows: 360px 360px 360px;
     column-gap: 20px;
 	row-gap: 20px;
+    margin-top: 40px;
 
 }
 
-.wrapper .career{
+/* wrapper 공통 */
+.wrapper .text{
 
-    grid-row: 1/3;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.wrapper .career .bg{
-background: url(/YGHOME/career.jpg), no-repeat;
-width: 360px;
-height: 740px;
-transition: 0.5s;
-}
-
-.wrapper .career:hover .bg{
-transform: scale(1.1);
-
-}
-
-.wrapper .career .text{
     position: absolute;
     top: 20px;
     left: 20px;
 
 }
 
-
-.wrapper .career .text h2 a{
-font-family: 'Armstrong',sans-serif;
-color: white;
-font-size: 20px;
-display: block;
+.wrapper .text h2 a{
+    font-family: 'Armstrong',sans-serif;
+    color: white;
+    font-size: 20px;
 }
 
-
-.wrapper .career .text p{
-
+.wrapper .text p{
     margin-top: 10px;
+    margin-left: 2px;
+}
+
+.wrapper .career{
+    grid-row: 1/3;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper .career .cbg{
+background: url(/YGHOME/career.jpg), no-repeat;
+width: 360px;
+height: 740px;
+transition: 0.5s;
+}
+
+.wrapper .career:hover .cbg{
+transform: scale(1.1);
 
 }
 
 .wrapper .yglife {
     grid-column: 2/4;
     overflow: hidden;
+    position: relative;
 }
 
 .wrapper .yglife .lbg{
@@ -361,38 +359,76 @@ display: block;
     }
 
 .wrapper .yglife:hover .lbg{
-        transform: scale(1.1);
-
-        }
-
-.wrapper .yglife .ltext{
-    position: absolute;
-    top: 20px;
-    left: 400px;
-
+    transform: scale(1.1);
 }
 
-.wrapper .yglife .ltext h2 a{
-    font-family: 'Armstrong',sans-serif;
-    color: white;
-    font-size: 20px;
-    }
-
-    .wrapper .yglife .ltext p{
-        margin-top: 10px;
-        margin-left: 2px;
-    }
-    
 
 .wrapper .producer {
     background-color: blue;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper .producer .pbg{
+    width: 360px;
+    height: 360px;
+    background: url("/YGHOME/produceraudition.jpg");
+    transition: 0.8s;
+}
+
+.wrapper .producer:hover .pbg{
+transform: scale(1.1);
 }
 
 .wrapper .audition{
     background-color: pink;
+    position: relative;
+    overflow: hidden;
 }
+
+.wrapper .audition .abg{
+    width: 360px;
+    height: 360px;
+    transition: 0.8s;
+    background: url("/YGHOME/yg-audition.jpg");
+}
+
+.wrapper .audition:hover .abg{
+    transform: scale(1.1);
+    }
 
 .wrapper .ygselect{
     grid-column: 1/4;
-    background-color: purple;
+    position:relative;
+    overflow: hidden;
+
+}
+
+.wrapper .ygselect .sbg{
+background:url("/YGHOME/event_detail.jpg");
+width: 1120px;
+height: 360px;
+transition: 0.8s;
+}
+
+.wrapper .ygselect:hover .sbg{
+    transform: scale(1.1);
+}
+
+
+/* section visual */
+.visual{
+
+    background-image: url("/YGHOME/starsbg.jpg");
+
+}
+
+.visual .arrowbeat img{
+margin-left: 220px;
+margin-top: 100px;
+}
+
+.visual .mvtext img{
+margin-left: 225px;
+margin-top: 50px;
 }

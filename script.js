@@ -37,4 +37,6 @@ $(document).ready(function(){
       direction : 'vertical',
       autoplay : true,
       loop: true
-    })
+    });
+
+    AOS.init();
