@@ -34,6 +34,7 @@ $(document).ready(function(){
 //vanila javascript
 
 
+//swiper라이브러리
 //new Swiper(선택자,옵션)
     new Swiper('.notice-line .swiper-container', {
       direction : 'vertical',
@@ -67,8 +68,10 @@ $(document).ready(function(){
 
 
 
-    //gsap라이브러리
-    
+    //gsap 자바스크립트 애니메이션 라이브러리
+    //gsap.to(요소를기준으로,지속시간,옵션추가)
+    //_.throttle : 스크롤값 간단하게 보여주기 (함수,시간)
+
     const toTopEL = document.querySelector('#to-top');
     
     //스크롤이벤트
@@ -82,7 +85,7 @@ $(document).ready(function(){
           opacity: 1,
           display : 'block'
           
-        }); //요소,지속시간,옵션추가
+        }); 
       } else{
         gsap.to(toTopEL, .6, {
           opacity: 0,
@@ -93,7 +96,7 @@ $(document).ready(function(){
         // toTopEL.style.display = 'none'
       }
     },300))
-    //_.throttle : 스크롤값 간단하게 보여주기 (함수,시간)
+    
     
     //클릭이벤트
     toTopEL.addEventListener('click', function(){
