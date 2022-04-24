@@ -161,6 +161,9 @@ main .bx-wrapper{
     display: none;
 }
 
+.bx-wrapper .bx-next{
+
+}
 
 /* section 공지사항 */
 .notice{}

@@ -46,10 +46,10 @@ $(document).ready(function(){
 
       slidesPerView : 3,
       spaceBetween : 100, //슬라이드 사이 여백
-      centeredSlides : true,
+      centeredSlides : true, //1번슬라이드가 정가운데 출력
       loop:true,
       autoplay: {
-        delay:5000
+        delay:5000 //이미지 돌아가는 속도 (기본값 3000)
       },
       pagination: {
         el: '.musicslider .swiper-pagination', //페이지 번호 요소 선택자
@@ -83,13 +83,13 @@ $(document).ready(function(){
 
         gsap.to(toTopEL, .6, {
           opacity: 1,
-          display : 'block'
+          display : 'block' 
           
         }); 
       } else{
         gsap.to(toTopEL, .6, {
           opacity: 0,
-          display : 'none'
+          display : 'none' //오파시티는 안보이게만해줌. 기능자체를 없애줘야함
           
         })
         //투탑보이기
