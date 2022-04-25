@@ -1,0 +1,190 @@
+/* main */
+
+
+
+main{
+    position: relative;
+
+}
+
+main .mbg{
+    background: url(../YGCOMPANY/ygcommainbg.png);
+    width: 1920px;
+    height: 700px;
+    background-size: cover;
+    filter: brightness(0.3);
+}
+
+main .mtext{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 400px;
+    margin: auto 0;
+    height: 30px;
+}
+
+main .mtext h2{
+    font-size: 30px;
+    padding: 8px;
+}
+
+main .mtext p{
+    font-size: 20px;
+    padding: 8px;
+    line-height: 1.5rem;
+}
+
+/* section */
+
+section{
+background-color: white;
+height: 3000px;
+
+}
+
+section .intro{
+position: relative;
+}
+
+.intro .ibg{
+    background: url(../YGCOMPANY/ibgintro.png);
+    height: 700px;
+}
+
+.intro .iset {
+    position: absolute;
+    display: flex;
+    top: 150px;
+    left: 370px;
+    bottom: 0;
+}
+
+.intro .ilogo{
+padding-top: 60px;
+
+}
+
+.intro .ilogo img{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.intro .itext{
+    color: black;
+    margin-left: 330px;
+    
+}
+
+
+.intro .itext p,
+.intro .itext span{
+    font-size: 20px;
+    line-height: 1.6rem;
+    padding-bottom: 40px;
+}
+
+.branding{
+margin-top: 200px;
+}
+
+
+.btitle{
+color: black;
+font-size: 25px;
+font-family: 'Armstrong',sans-serif;
+margin-left: 370px;
+margin-bottom: 50px;
+}
+
+.btitle>span{
+display: block;
+height: 5px;
+width: 60px;
+background: linear-gradient(to right, pink,plum);
+margin-bottom: 20px;
+}
+
+.btext{
+    color: black;
+    margin-left: 1100px;
+    font-size: 20px;
+    line-height: 1.6rem;
+}
+
+
+.btext .btn{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.btext .btn>div>a{
+    /* display: block; */
+    color: black;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.btext .btn>div:hover>a{
+    background-color: #333;
+    color: white;
+}
+
+.btext .btn .jpgfile{
+    margin-left: 10px;
+}
+
+.branding .brandimg img{
+
+    margin-left: 430px;
+    margin-top: 150px;
+    /* width: 1200px;
+    height: 400px; */
+}
+
+.identity {
+    margin-top: 150px;
+}
+
+.identity .bgroup{
+display: flex;
+color: black;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+width: 1100px;
+height: 300px;
+margin-top: 180px;
+margin-left: 400px;
+padding: 50px;
+box-sizing: border-box;
+}
+
+.identity .bgroup .bsymbol{
+border-right: 1px solid black ;
+padding: 0 100px 0 80px;
+/* background-color: red; */
+}
+
+.bgroup .stext{
+font-size: 20px;
+font-family: 'armstrong', sans-serif;
+margin-bottom: 15px;
+}
+
+.bsymbol img{
+margin-top: 30px;
+}
+
+.bgroup .bright{
+    margin-left: 100px;
+    /* background-color: green; */
+}
+
+.bgroup .bright .logotype{
+margin-bottom: 30px;
+}
