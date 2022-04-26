@@ -1,0 +1,206 @@
+/* main */
+
+
+
+main{
+    position: relative;
+    overflow: hidden;
+
+}
+
+main .mbg{
+    background: url('../YGBUSINESS/businessbg.png');
+    width: 1920px;
+    height: 700px;
+    background-size: cover;
+    transition: .8s;
+}
+
+main .mbg:hover{
+transform: scale(1.05);
+filter: brightness(0.3);
+/* filter: grayscale(0); */
+}
+
+main .mtext{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 300px;
+    margin: auto 0;
+    height: 30px;
+}
+
+main .mtext h2{
+    font-size: 30px;
+    padding: 8px;
+}
+
+
+
+main .mtext p{
+    font-size: 20px;
+    padding: 8px;
+    line-height: 1.5rem;
+}
+
+
+/* section */
+
+section{
+    background-color: white;
+    height: 3200px;
+
+}
+
+.business-unit{
+padding-top: 100px;
+}
+
+
+.btitle{
+    color: black;
+    font-size: 25px;
+    font-family: 'Armstrong',sans-serif;
+    /* margin-left: 300px; */
+    margin-bottom: 50px;
+    }
+    
+    
+.btext{
+        color: black;
+        margin-left: 580px;
+        font-size: 20px;
+        line-height: 1.6rem;
+    }
+
+
+
+.entertain {
+    margin-top: 200px;
+
+}
+
+.entertext{
+    color: black;
+
+}
+
+.entertext span{
+display: block;
+height: 5px;
+width: 60px;
+background: linear-gradient(to right, pink,plum);
+margin-bottom: 20px;
+
+}
+
+.entertext h4{
+    font-family: 'Armstrong', sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.enterbox{
+margin-top: 30px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.imgbox{
+    width: 540px;
+    height: 300px;
+}
+
+.imgbox+.imgbox{
+    margin-left: 20px;
+}
+
+.imgbox:nth-child(3),
+.imgbox:nth-child(5),
+.imgbox:nth-child(7){
+    margin-left: 0;
+}
+
+.imgbox .imgbg{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    transition: .6s;
+    filter: brightness(0.8);
+
+}
+
+.imgbox .imgbg:hover{
+    filter: brightness(1);
+}
+
+.singing{
+    background: url("../YGBUSINESS/audio-1851517_1920.jpg"),no-repeat;
+    background-position-y: 50%;
+}
+
+.production{
+    background: url("../YGBUSINESS/hand-1850120_1920.jpg");
+    background-position-y: 30%;
+}
+
+.concert{
+    background: url("../YGBUSINESS/blackpink.jpg");
+}
+
+.manage{
+    background: url("../YGBUSINESS/management.jpg");
+}
+
+.imgtitle{
+    width: 100%;
+    height: 50px;
+    color: black;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.commerce .entertext{
+    margin-top: 100px;
+}
+
+.ygfood{
+    background: url("../YGBUSINESS/restaurant.jpg");
+}
+
+.ygsports{
+    background: url("../YGBUSINESS/golf.jpg");
+}
+
+.kplus{
+    background: url("../YGBUSINESS/kplus.png");
+    background-position-x: -80px;
+}
+
+.studio{
+    background: url("../YGBUSINESS/The-Greatest-Love12.jpg");
+}
+
+.makeup{
+    background: url("../YGBUSINESS/makeup.jpg");
+}
+
+.eshop{
+    background: url("../YGBUSINESS/logo2.jpg");
+}
+
+.plus{
+    background: url("../YGBUSINESS/smartphone.jpg");
+}
+
+
+.charity .entertext{
+    margin-top: 100px;
+}
+
+.donation{
+    background: url("../YGBUSINESS/charity.jpg");
+    background-position-y: 40%;
+    background-position-x: -10px;
+}

@@ -9,7 +9,7 @@ main{
 }
 
 main .mbg{
-    background: url(../YGCOMPANY/ygcommainbg.png);
+    background: url('../YGCOMPANY/ygcommainbg.png');
     width: 1920px;
     height: 700px;
     background-size: cover;
