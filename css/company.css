@@ -4,6 +4,7 @@
 
 main{
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -12,7 +13,13 @@ main .mbg{
     width: 1920px;
     height: 700px;
     background-size: cover;
-    filter: brightness(0.3);
+    transition: .8s;
+}
+
+main .mbg:hover{
+transform: scale(1.05);
+filter: brightness(0.3);
+/* filter: grayscale(0); */
 }
 
 main .mtext{
@@ -168,7 +175,7 @@ transition: .3s;
 
 .branding .brandimg img{
 
-    margin-left: 160px;
+    margin-left: 150px;
     margin-top: 100px;
     /* width: 1200px;
     height: 400px; */
