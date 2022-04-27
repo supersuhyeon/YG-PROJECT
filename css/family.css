@@ -72,3 +72,70 @@
     padding: 8px;
     line-height: 1.5rem;
 }
+
+/* section */
+
+section{
+    background-color: white;
+    background-image: url("../YGARTIST/bgartist.png");
+    height: 8000px;
+}
+
+.groupbox{
+    display: flex;
+    position: relative;
+}
+
+.arttitlebox{
+    display: flex;
+    width: 400px;
+    margin-top: 50px;
+    /* position: absolute;
+    top: 10px;
+    left: 100px;
+    z-index: 9999; */
+
+}
+
+.arttitlebox .artname{
+    margin-top: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: black;
+
+}
+
+.arttitlebox .artname p{
+    margin-bottom: 8px;
+ }
+    
+
+.arttitlebox .artname p:hover{
+color: plum;
+
+}
+
+
+.artmusic{
+
+}
+
+.artmusic img{
+
+}
+
+.artimgbox{
+    width: 600px;
+    margin-top: 95px;
+
+}
+
+.artimgbox>img{
+    margin-left: 50px;
+    filter: brightness(0.8);
+    transition: .6s;
+}
+
+.artimgbox>img:hover{
+    filter: brightness(1);
+}
