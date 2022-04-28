@@ -1,5 +1,9 @@
 /* main - youtube */
 
+html{
+    scroll-behavior: smooth;
+}
+
 .youtube{
 
     position: relative;
@@ -78,39 +82,39 @@
 section{
     background-color: white;
     background-image: url("../YGARTIST/bgartist.png");
-    height: 8000px;
+    height: 8200px;
+
 }
 
 .groupbox{
     display: flex;
     position: relative;
+    left: 200px;
+    
 }
 
 .arttitlebox{
     display: flex;
-    width: 400px;
-    margin-top: 50px;
-    /* position: absolute;
-    top: 10px;
-    left: 100px;
-    z-index: 9999; */
-
+    margin-top: 20px;
 }
-
 .arttitlebox .artname{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 20px;
     cursor: pointer;
     color: black;
+    
 
 }
 
 .arttitlebox .artname p{
     margin-bottom: 8px;
  }
-    
 
-.arttitlebox .artname p:hover{
+ .arttitlebox .artname p a{
+     color: black;
+ }
+
+.arttitlebox .artname p:hover a{
 color: plum;
 
 }
@@ -125,17 +129,65 @@ color: plum;
 }
 
 .artimgbox{
-    width: 600px;
-    margin-top: 95px;
+
+    position: absolute;
+    top: 95px;
+    left: 595px;
+   
 
 }
 
 .artimgbox>img{
-    margin-left: 50px;
     filter: brightness(0.8);
     transition: .6s;
+    margin-bottom: 100px;
 }
 
 .artimgbox>img:hover{
     filter: brightness(1);
+}
+
+.arttitlebox.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.bigbang{
+    margin-left: 150px;
+}
+
+.daesung{
+    margin-left: 100px;
+}
+
+.eunjiwon{
+    margin-left: 300px;
+}
+
+.gdtaeyang{
+    margin-left: 150px;
+}
+
+.jennie{
+    margin-left: 100px;
+}
+
+.ksy{
+    margin-left: 200px;
+}
+
+.leesuhyun{
+    margin-left: 300px;
+}
+
+.lisa{
+    margin-left:200px ;
+}
+
+.seckskies{
+    margin-left: 150px;
+}
+
+.winner{
+    margin-left: 200px;
 }
