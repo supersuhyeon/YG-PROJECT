@@ -157,7 +157,7 @@
             <img src="../YGARTIST/musictitle.png" alt="yg music">
         </div>
         <div class="artname">
-            <p><a href="#ACMU">ACMU</a></p>
+            <p><a href="#modalACMU">ACMU</a></p>
             <p><a href="#BIGBANG">BIGBANG</a></p>
             <p><a href="#BLACKPINK">BLACKPINK</a></p>
             <p> <a href="#BOBBY">BOBBY</a> </p>
@@ -183,36 +183,89 @@
     </div>
 
     <div class="artimgbox">
-        <img class="acmu" id="ACMU" src="../YGARTIST/ACMU/aacmu.png" alt="">
-        <img class="bigbang" id="BIGBANG" src="../YGARTIST/BIGBANG/abigbang.png" alt="">
-        <img class="blackpink" id="BLACKPINK" src="../YGARTIST/BLACKPINK/ablackpink.png" alt="">
-        <img class="bobby" id="BOBBY" src="../YGARTIST/BOBBY/abobby.png" alt="">
-        <img class="daesung" id="DAESUNG" src="../YGARTIST/DAESUNG/cdaesung.png" alt="">
-        <img class="eunjiwon" id="EUNJIWON" src="../YGARTIST/EUNJIWON/ceunjiwon.png" alt="">
-        <img class="gdragon" id="gdragon" src="../YGARTIST/G-DRAGON/cgdragon.png" alt="">
-        <img class="gdtaeyang" id="gdtaeyang" src="../YGARTIST/GDTAEYANG/cgdtaeyang.png" alt="">
-        <img class="ikon" id="iKON" src="../YGARTIST/IKON/cikon.png" alt="">
-        <img class="jennie" id="JENNIE" src="../YGARTIST/JENNIE/cjennie.png" alt="">
-        <img class="jinu" id="JINU" src="../YGARTIST/JINU/cjinu.png" alt="">
-        <img class="ksy" id="ksy" src="../YGARTIST/KANGSEUNGYOON/ckangseung.png" alt="">
-        <img class="krunk" id="KRUNK" src="../YGARTIST/KRUNK/ckrunk.png" alt="">
-        <img class="leesuhyun" id="leesuhyun" src="../YGARTIST/LEESUHYUN/cleesuhyun.png" alt="">
-        <img class="lisa" id="LISA" src="../YGARTIST/LISA/clisa.png" alt="">
-        <img class="mino" id="MINO" src="../YGARTIST/MINO/cmino.png" alt="">
-        <img class="rose" id="ROSE" src="../YGARTIST/ROSE/crose.png" alt="">
-        <img class="seckskies" id="SECKSKIES" src="../YGARTIST/SECKSKIES/cseckskies.png" alt="">
-        <img class="taeyang" id="TAEYANG" src="../YGARTIST/TAEYANG/taeyang.png" alt="">
-        <img class="treasure" id="TREASURE" src="../YGARTIST/TREASURE/ctreasure.png" alt="">
-        <img class="winner" id="WINNER" src="../YGARTIST/WINNER/cwinner.png" alt="">
-        <img class="ygfam" id="YGFAMILY" src="../YGARTIST/YGFAMILY/cygfam.png" alt="">
+    <img class="acmu" id="modalACMU" src="../YGARTIST/ACMU/aacmu.png" alt="">
+    <img class="bigbang" id="BIGBANG" src="../YGARTIST/BIGBANG/abigbang.png" alt="">
+    <img class="blackpink" id="BLACKPINK" src="../YGARTIST/BLACKPINK/ablackpink.png" alt="">
+    <img class="bobby" id="BOBBY" src="../YGARTIST/BOBBY/abobby.png" alt="">
+    <img class="daesung" id="DAESUNG" src="../YGARTIST/DAESUNG/cdaesung.png" alt="">
+    <img class="eunjiwon" id="EUNJIWON" src="../YGARTIST/EUNJIWON/ceunjiwon.png" alt="">
+    <img class="gdragon" id="gdragon" src="../YGARTIST/G-DRAGON/cgdragon.png" alt="">
+    <img class="gdtaeyang" id="gdtaeyang" src="../YGARTIST/GDTAEYANG/cgdtaeyang.png" alt="">
+    <img class="ikon" id="iKON" src="../YGARTIST/IKON/cikon.png" alt="">
+    <img class="jennie" id="JENNIE" src="../YGARTIST/JENNIE/cjennie.png" alt="">
+    <img class="jinu" id="JINU" src="../YGARTIST/JINU/cjinu.png" alt="">
+    <img class="ksy" id="ksy" src="../YGARTIST/KANGSEUNGYOON/ckangseung.png" alt="">
+    <img class="krunk" id="KRUNK" src="../YGARTIST/KRUNK/ckrunk.png" alt="">
+    <img class="leesuhyun" id="leesuhyun" src="../YGARTIST/LEESUHYUN/cleesuhyun.png" alt="">
+    <img class="lisa" id="LISA" src="../YGARTIST/LISA/clisa.png" alt="">
+    <img class="mino" id="MINO" src="../YGARTIST/MINO/cmino.png" alt="">
+    <img class="rose" id="ROSE" src="../YGARTIST/ROSE/crose.png" alt="">
+    <img class="seckskies" id="SECKSKIES" src="../YGARTIST/SECKSKIES/cseckskies.png" alt="">
+    <img class="taeyang" id="TAEYANG" src="../YGARTIST/TAEYANG/taeyang.png" alt="">
+    <img class="treasure" id="TREASURE" src="../YGARTIST/TREASURE/ctreasure.png" alt="">
+    <img class="winner" id="WINNER" src="../YGARTIST/WINNER/cwinner.png" alt="">
+    <img class="ygfam" id="YGFAMILY" src="../YGARTIST/YGFAMILY/cygfam.png" alt="">
     </div>
 
+    
+    <div class="modal hidden">
+      <div class="modal__overlay" >
+      <div class="modal__content">
+        
+        <div class="content__slide">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../YGARTIST/ACMU/modalacmu.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../YGARTIST/ACMU/modalacmu2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../YGARTIST/ACMU/modalacmu3.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="content__text">
+            <span></span>
+            <div class="bigtitle">
+                <h2>ACMU</h2>
+                <p>2013년 SBS ‘K팝스타2’에 혜성처럼 등장해 우승을 거머쥔 AKMU는<br>
+                    ‘다리꼬지마’, ‘매력있어’, ‘라면인건가’ 등 기존에는 볼 수 없었던<br>
+                    통통 튀는 자작곡으로 가요계에 깊은 인상을 각인시켰다.<br>
+                    이후 2014년 정규 1집 [PLAY]로 데뷔하여 단숨에 음원 차트 1위를 <br>
+                    차지함과 동시에 ‘가온차트 뮤직 어워드’, ‘한국 대중 음악상’ 등 각종 <br>
+                    시상식에서 수상을 거두며 대중과 평단을 사로잡는 싱어송라이터로서의 면모를 입증했다.</p>
+                    <p>2013년 SBS ‘K팝스타2’에 혜성처럼 등장해 우승을 거머쥔 AKMU는<br>
+                        ‘다리꼬지마’, ‘매력있어’, ‘라면인건가’ 등 기존에는 볼 수 없었던<br>
+                        통통 튀는 자작곡으로 가요계에 깊은 인상을 각인시켰다.<br>
+                        이후 2014년 정규 1집 [PLAY]로 데뷔하여 단숨에 음원 차트 1위를 <br>
+                        차지함과 동시에 ‘가온차트 뮤직 어워드’, ‘한국 대중 음악상’ 등 각종 <br>
+                        시상식에서 수상을 거두며 대중과 평단을 사로잡는 싱어송라이터로서의 면모를 입증했다.</p>
+                        <p>2013년 SBS ‘K팝스타2’에 혜성처럼 등장해 우승을 거머쥔 AKMU는<br>
+                            ‘다리꼬지마’, ‘매력있어’, ‘라면인건가’ 등 기존에는 볼 수 없었던<br>
+                            통통 튀는 자작곡으로 가요계에 깊은 인상을 각인시켰다.<br>
+                            이후 2014년 정규 1집 [PLAY]로 데뷔하여 단숨에 음원 차트 1위를 <br>
+                            차지함과 동시에 ‘가온차트 뮤직 어워드’, ‘한국 대중 음악상’ 등 각종 <br>
+                            시상식에서 수상을 거두며 대중과 평단을 사로잡는 싱어송라이터로서의 면모를 입증했다.</p>
+            </div>
+            <div class="disco">
+                <h2></h2>
+                <p></p>
+            </div>
+
+        </div>
+        <div id="close">
+            <div class="material-icons">close</div>
+        </div>
+      </div>
+    </div>
 
 </div>
-
 </section>
-
-
 
 
 <!-- footer -->

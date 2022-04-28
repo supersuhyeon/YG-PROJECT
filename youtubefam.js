@@ -54,4 +54,44 @@ window.addEventListener('scroll', function(){
 }else{
         artTitleBox.classList.remove('fixed')
     }
-})
+});
+
+const openBtn = document.getElementById('modalACMU');
+//onModal button
+
+const closeBtn = document.getElementById('close');
+//offModal button
+
+const modal = document.querySelector('.modal');
+//HTML에서의 모달 최상위 요소
+
+const overlay = document.querySelector('.modal__overlay');
+//모달창이 활성화되면 흐린 배경을 표현하는 요소
+
+const openModal = () => {
+  modal.classList.remove('hidden');
+}
+
+const closeModal = () => {
+  modal.classList.add('hidden');
+}
+openBtn.addEventListener('click', openModal);
+
+closeBtn.addEventListener('click', closeModal);
+//모달창 내부의 닫기 버튼
+
+overlay.addEventListener('click', closeModal);
+//모달창 영역 밖
+
+
+// <!-- Initialize Swiper -->
+
+  new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
+
+
+  
