@@ -1,0 +1,366 @@
+/* main */
+
+
+
+main{
+    position: relative;
+    overflow: hidden;
+
+}
+
+main .mbg{
+    background: url(../YGCOMPANY/ygcommainbg.png);
+    width: 1920px;
+    height: 700px;
+    background-size: cover;
+    transition: .8s;
+}
+
+main .mbg:hover{
+transform: scale(1.05);
+filter: brightness(0.3);
+/* filter: grayscale(0); */
+}
+
+main .mtext{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 300px;
+    margin: auto 0;
+    height: 30px;
+}
+
+main .mtext h2{
+    font-size: 30px;
+    padding: 8px;
+}
+
+
+
+main .mtext p{
+    font-size: 20px;
+    padding: 8px;
+    line-height: 1.5rem;
+}
+
+/* section */
+
+section{
+background-color: white;
+height: 3650px;
+
+}
+
+section .intro{
+position: relative;
+}
+
+.intro .ibg{
+    /* background: url('../YGCOMPANY/ibgintro.png'),no-repeat; */
+    height: 700px;
+}
+
+.intro .iset {
+    position: absolute;
+    display: flex;
+    top: 150px;
+    /* left: 220px; */
+    bottom: 0;
+}
+
+.intro .ilogo{
+padding-top: 60px;
+
+}
+
+/* .intro .ilogo img{
+    border: 2px solid black;
+    border-radius: 50%;
+} */
+
+.intro .itext{
+    color: black;
+    margin-left: 190px;
+    
+}
+
+.intro .itext h2{
+    font-size: 25px;
+    
+}
+
+.intro .itext h2 strong{
+font-weight: 600;
+display: inline-block;
+margin-bottom: 20px;
+/* 내용만큼 크기값조절하기위해 인라인블럭설정 */
+}
+
+.intro .itext strong::after{
+    content: '';
+    display: block;
+    border-bottom: 15px solid #e1d4f4;
+    margin-top: -20px;
+    width: 0;
+    transition: .6s;
+}
+
+.intro .itext:hover strong::after{
+width: 100%;
+}
+
+.intro .itext p,
+.intro .itext span{
+    font-size: 20px;
+    line-height: 1.6rem;
+    padding-bottom: 40px;
+}
+
+.branding{
+margin-top: 200px;
+}
+
+
+.btitle{
+color: black;
+font-size: 25px;
+font-family: 'Armstrong',sans-serif;
+/* margin-left: 300px; */
+margin-bottom: 50px;
+}
+
+.btitle>span{
+display: block;
+height: 5px;
+width: 60px;
+background: linear-gradient(to right, pink,plum);
+margin-bottom: 20px;
+}
+
+.btext{
+    color: black;
+    margin-left: 580px;
+    font-size: 20px;
+    line-height: 1.6rem;
+}
+
+
+.btext .btn{
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.btext .btn>div>a{
+    /* display: block; */
+    color: black;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    display: flex;
+justify-content: center;
+align-items: center;
+transition: .3s;
+}
+
+.btext .btn>div:hover>a{
+    background-color: #333;
+    color: white;
+}
+
+.btext .btn .jpgfile{
+    margin-left: 10px;
+}
+
+.branding .brandimg img{
+
+    margin-left: 150px;
+    margin-top: 100px;
+    /* width: 1200px;
+    height: 400px; */
+}
+
+.identity {
+    margin-top: 150px;
+}
+
+.identity .bgroup{
+display: flex;
+color: black;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+width: 1100px;
+height: 430px;
+margin-top: 180px;
+/* margin-left: 250px; */
+padding: 80px;
+box-sizing: border-box;
+}
+
+.identity .bgroup .bleft{
+border-right: 1px solid black ;
+/* background-color: yellow; */
+padding-left: 50px;
+padding-right: 120px;
+/* padding: 0 100px 0 20px; */
+/* background-color: red; */
+}
+
+.bgroup .stext{
+font-size: 20px;
+font-family: 'armstrong', sans-serif;
+margin-bottom: 15px;
+}
+
+.bsymbol img{
+margin-top: 30px;
+}
+
+.bgroup .bright{
+    /* background-color: yellow; */
+    margin-left: 60px;
+    /* background-color: green; */
+}
+
+.bgroup .bright .logotype{
+margin-bottom: 30px;
+}
+
+.color{
+display: flex;
+flex-wrap: wrap;
+width: 1100px;
+margin-left : 50px;
+margin-top: 100px;
+}
+
+.color>div{
+    color: black;
+    /* background-color: yellow; */
+    width: 500px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.color{
+
+}
+
+.color .cbox{
+    width: 450px;
+    height: 150px;
+    display: flex;
+}
+
+.color .cbox .imgbox{
+    width: 210px;
+    height: 150px;
+    /* background-color: red; */
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctitle{
+    margin-left: 10px;
+}
+
+.imgtext{
+    color: white;
+}
+
+.priblack{
+    background-color: black;
+}
+.vibegray{
+    background-color: gray;
+}
+
+.sliver{
+    background-color: silver;
+}
+
+.gold{
+    background-color: gold;
+}
+
+.accent-imgbox{
+    width: 420px;
+    height: 150px;
+    /* background-color: red; */
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    background-color: red;
+}
+
+.social-networks{
+color: black;
+/* margin-left: 300px; */
+margin-top: 80px;
+}
+
+.social-networks h2{
+    font-size: 20px;
+    font-family: 'armstrong', sans-serif;
+    margin-bottom: 10px;
+}
+
+.social-networks>span{
+    display: block;
+    height: 5px;
+    width: 60px;
+    background: linear-gradient(to right, pink,plum);
+    margin-bottom: 20px;
+    }
+
+.snsgroup{
+    display: flex;
+    margin-top: 30px;
+}
+
+.snsnet .snsgroup li a{
+    width: 100px;
+    height: 100px;
+    /* background-color: red; */
+    display: block;
+    border-radius: 50%;
+    background-size:cover;
+}
+
+.snsgroup>li+li{
+    margin-left: 20px;
+}
+
+.facebook a{
+    background : url('../YGCOMPANY/ico_facebook.png');
+    background-position-y: 100px;
+}
+
+.insta a{
+    background : url('../YGCOMPANY/ico_instagram.png');
+    background-position-y: 100px;
+}
+
+.weibo a{
+    background : url('../YGCOMPANY/ico_weibo.png');
+    background-position-y: 100px;
+}
+
+.twitter a{
+    background: url('../YGCOMPANY/ico_twitter.png');
+    background-position-y: 100px;
+}
+
+.youtube a{
+    background: url('../YGCOMPANY/ico_youtube.png');
+    background-position-y: 100px;
+}
