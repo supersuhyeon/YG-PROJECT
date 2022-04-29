@@ -65,33 +65,42 @@ const closeBtn = document.getElementById('close');
 const modal = document.querySelector('.modal');
 //HTML에서의 모달 최상위 요소
 
-const overlay = document.querySelector('.modal__overlay');
-//모달창이 활성화되면 흐린 배경을 표현하는 요소
+// const overlay = document.querySelector('.modal__overlay');
 
-const openModal = () => {
-  modal.classList.remove('hidden');
-}
+// const closeModal = () => {
+//   modal.classList.add('hidden');}
 
-const closeModal = () => {
-  modal.classList.add('hidden');
-}
-openBtn.addEventListener('click', openModal);
+// overlay.addEventListener('click', closeModal);
 
-closeBtn.addEventListener('click', closeModal);
-//모달창 내부의 닫기 버튼
+openBtn.addEventListener('click', ()=>{
+    modal.classList.remove('hidden');
+    document.body.classList.add("stop-scroll");
+    gsap.to(toTopEL, .6, {
+        opacity: 0,
+        display : 'none'})
+    
+});
 
-overlay.addEventListener('click', closeModal);
-//모달창 영역 밖
+closeBtn.addEventListener('click', ()=>{
+    modal.classList.add('hidden');
+    document.body.classList.remove("stop-scroll")
+})
+
 
 
 // <!-- Initialize Swiper -->
 
   new Swiper(".mySwiper", {
+    loop:true,
+    autoplay:{
+        delay:3000
+    },
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
+      clickable: true
     },
   });
 
 
-  
+ 
