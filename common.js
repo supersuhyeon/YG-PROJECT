@@ -1,6 +1,7 @@
 //jquery
 
 $(document).ready(function(){
+
   
     $(".main-menu>li").hover(function(){
       
@@ -18,8 +19,6 @@ $(document).ready(function(){
        $(".subWrap").stop().slideUp(600);
      }
    );
-
-
 
 });
 
@@ -65,4 +64,3 @@ AOS.init();
         scrollTo : 0
       })
     })
-

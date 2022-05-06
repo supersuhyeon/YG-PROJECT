@@ -16,6 +16,7 @@ body{
     font-family: 'KoPubDotumMedium', sans-serif;
     font-family: 'Armstrong', sans-serif;                
     font-family: 'YGEdged-Bold', sans-serif;
+    overflow-x: hidden;
 }
 
 img{
@@ -34,7 +35,6 @@ a{
 }
 
 
-/* HEADER */
 header{}
 
 header>.inner{
@@ -42,10 +42,10 @@ header>.inner{
 height: 130px;
 }
 
-/* HEADER - logo */
+
 
 header .logo {
-/* 로고 수직가운데 정렬하기 position absolute, topbottom 0, margin auto 0, height값 */
+
 position: absolute;
 top: 65px
 }
@@ -55,7 +55,7 @@ width: 70px;
 height: 35px;
 
 }
-/* HEADER - sub-menu */
+
 
 header .sub-menu{
     position: absolute;
@@ -102,7 +102,7 @@ header .sub-menu ul.menu li a:hover{
 color: plum;
 }
 
-/* HEADER - main-menu */
+
 
 .main-menu{
     display: flex;
@@ -145,8 +145,7 @@ background-color: black;
 display: flex;
 justify-content: center;
 margin-left: 316px;
-}
-
+} */
 
 /* footer */
 
