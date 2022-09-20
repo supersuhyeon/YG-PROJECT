@@ -35,10 +35,7 @@ AOS.init();
     
     //스크롤이벤트
     window.addEventListener('scroll', _.throttle(function(){
-      console.log(window.scrollY);
       if (window.scrollY > 500){
-         //투탑숨기기
-        //  toTopEL.style.display = 'block'
 
         gsap.to(toTopEL, .6, {
           opacity: 1,
@@ -48,11 +45,9 @@ AOS.init();
       } else{
         gsap.to(toTopEL, .6, {
           opacity: 0,
-          display : 'none' //오파시티는 안보이게만해줌. 기능자체를 없애줘야함
+          display : 'none' 
           
         })
-        //투탑보이기
-        // toTopEL.style.display = 'none'
       }
       
     },300))
