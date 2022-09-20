@@ -1,8 +1,8 @@
 ## Redesign the YG website
 
-![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/94214512/191140187-65174e82-2be7-402a-b240-044c52a62c86.gif)
+![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/94214512/191140187-65174e82-2be7-402a-b240-044c52a62c86.gif)<br>
 [Redesign-YG-website](https://profound-cocada-ee9eae.netlify.app/)<br>
-[Official-YG-Website](https://www.ygfamily.com/)
+[Official-YG-Website](https://www.ygfamily.com/)<br>
 
 ### Goal of the project
 
